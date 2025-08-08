@@ -5,8 +5,9 @@ const indicator = document.querySelector('.indicator');
 const tabRow = document.querySelector('.tab-row');
 
 const updateIndicator = (target) => {
-    const tabBounds = target.getBoundingClientRect();
-    const rowBounds = tabRow.getBoundingClientRect();
+    // get position/ size of an element in Viewport
+    const tabBounds = target.getBoundingClientRect(); //clicked tab
+    const rowBounds = tabRow.getBoundingClientRect(); //enture tab row
 
     // find where width click bar is
     const width = tabBounds.width;
