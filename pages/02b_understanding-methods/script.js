@@ -19,7 +19,6 @@ const animation = gsap.to('.box',{
 })
 
 
-
 play.addEventListener("click", () => {
     animation.play();
 });
